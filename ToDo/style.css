@@ -1,0 +1,168 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.1s ease;
+    border: none;
+}
+
+:root {
+    --one: #091825;
+    --two: #6baee0;
+    --three: #5da4dd;
+    --four: #e0e0e0;
+    --five: #ffff;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.main {
+    width: 60%;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 6px -1px rgba(66, 68, 90, 1);
+
+}
+
+.card-header {
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.card-header .card-title {
+    text-align: center;
+
+}
+
+.card-title {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--two);
+    border-bottom: 0.1rem solid var(--two);
+}
+
+#todoAddForm+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+    background-color: var(--five);
+}
+
+button {
+    background-color: var(--four);
+    color: var(--one);
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 15rem;
+}
+
+button:hover {
+    background-color: var(--two);
+    cursor: pointer;
+}
+
+h5 {
+    color: var(--one);
+}
+
+input {
+    color: var(--one);
+    font-size: 2rem;
+    padding: 1rem;
+    outline: none;
+    border-radius: 0.3rem;
+    background-color: #f1f1f1;
+
+}
+
+input::placeholder {
+    color: var(--two);
+}
+
+input:hover {
+    background-color: var(--four);
+}
+
+#clearButton {
+    background-color: var(--four);
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 15rem;
+
+}
+
+#clearButton:hover {
+    background-color: var(--two);
+}
+
+.list-group-item {
+    color: var(--one);
+    list-style: none;
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    /*çarpı işaretini sona almaya yarar*/
+    justify-content: space-between;
+}
+
+a i {
+    color: var(--one);
+}
+
+a i:hover {
+    color: var(--two);
+}
+
+a:visited {
+    color: var(--one);
+}
+
+/* bildirimin sağ üst köşede çıkması için ve diğer elemanlara çarpmaması için bir div içine aldık */
+.messageBoxContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+/* app.js içindeki stilleri kolay yazmak için */
+/* .messageBox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    background-color: var(--four);
+    box-shadow: 1rem 1rem 1rem;
+    z-index: 10;
+} */

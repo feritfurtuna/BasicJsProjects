@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TO DO</title>
+    <link rel="icon" href="/title.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="card-header">
+                <h5 class="card-title">TO DO</h5>
+            </div>
+            <div class="card-body">
+                <form id="todoAddForm">
+                    <input type="text" class="form-control" id="todoName" placeholder="To Do Yazınız">
+                    <button id="todoAddButton" type="submit">Yeni Ekle</button>
+                </form>
+                <h5 class="card-title">Yapılacaklar</h5>
+                <form name="form2" id="todoListForm">
+                    <input id="todoSearch" type="text" placeholder="Todo Arayınız">
+                    <a href="#" id="clearButton">Hepsini Sil</a>
+                </form>
+                <ul class="list-group">
+                </ul>
+            </div>
+        </div>
+        <div class="messageBoxContainer">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
